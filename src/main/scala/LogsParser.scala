@@ -11,7 +11,7 @@ object LogsParser extends App {
     val wordsNum = args(0).trim.toInt
     val timeStart = args(1).trim.toLong
     val timeStop = args(3).trim.toLong
-    val dirPath = Array[String]{"/var/logs"}
+    val dirPath = Array[String]{"/var/log"}
 
     val invalidPaths = validatePaths(dirPath)
     if (invalidPaths.size > 0) {
